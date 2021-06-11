@@ -3,7 +3,7 @@ import product from "../assets/img/product.jpg";
 
 const Product = () => {
   return (
-    <section className="pb-20 bg-gray-300 -mt-24">
+    <section id="product" className="pb-20 bg-gray-300 -mt-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center mt-24">
           <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -21,7 +21,7 @@ const Product = () => {
               enfermedades de todo tipo.
             </p>
             <a href="#" className="font-bold text-gray-800 mt-8">
-              Check this!
+              ¡Checa esto!
             </a>
           </div>
           <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-6">

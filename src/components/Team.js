@@ -9,7 +9,7 @@ import team6 from "../assets/img/team6.jpg";
 const Team = () => {
   return (
     <>
-      <section className="pt-20 pb-48">
+      <section id="team" className="pt-20" style={{ marginBottom: "300px" }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">

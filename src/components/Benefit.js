@@ -1,9 +1,9 @@
 import React from "react";
-import content from "../assets/img/content.jpg";
+import content from "../assets/img/info-product.jpg";
 
 const Benefit = () => {
   return (
-    <section className="relative py-20">
+    <section id="about" className="relative py-20">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
         style={{ height: "80px" }}

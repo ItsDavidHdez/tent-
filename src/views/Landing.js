@@ -8,6 +8,7 @@ import Form from "components/Form";
 import AboutUs from "components/AboutUs";
 import Product from "components/Product";
 import Benefit from "components/Benefit";
+import Recommendations from "components/Recommendations";
 
 export default function Landing() {
   return (
@@ -15,6 +16,7 @@ export default function Landing() {
       <Navbar transparent />
       <main>
         <div
+          id="home"
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
           style={{
             minHeight: "100vh",
@@ -34,11 +36,11 @@ export default function Landing() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
+                <div>
                   <h1 className="text-white font-semibold text-5xl">
                     Bienvenido a Tenté
                   </h1>
-                  <p className="mt-4 text-lg text-gray-300">
+                  <p className="mt-4 text-xl text-gray-300">
                     Proporcionamos una infusión de la mejor procedencia, conoce
                     las valiosas propiedades y beneficios que contiene para
                     ayudarte a tener una vida más saludable.
@@ -50,6 +52,7 @@ export default function Landing() {
         </div>
         <Product />
         <Benefit />
+        <Recommendations />
         <AboutUs />
         <Team />
         <Form />
