@@ -36,11 +36,11 @@ const Form = () => {
               <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
                 <div className="flex-auto p-5 lg:p-10">
                   <h4 className="text-2xl font-semibold">
-                    ¿Quieres trabajar con nosotros?
+                    ¿Desea adquirir nuestro producto?
                   </h4>
                   <p className="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete este formulario y nos comunicaremos con usted en 24
-                    horas.
+                    Complete este formulario y nos comunicaremos con usted en
+                    menos de 24 horas.
                   </p>
                   <div className="relative w-full mb-3 mt-8">
                     <label

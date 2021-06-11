@@ -96,7 +96,7 @@ export default function Navbar(props) {
                 }
                 href="#about"
               >
-                <span className="text-white text-sm">Acerca del té</span>
+                <span className="text-white text-sm">Beneficios</span>
               </a>
             </li>
             <li className="flex items-center">

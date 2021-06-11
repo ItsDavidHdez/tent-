@@ -33,12 +33,19 @@ const AboutUs = () => {
               <h3 className="text-3xl font-semibold text-white mt-6">Origen</h3>
               <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                 Tenté se creó en Octubre de 2020 en Cerro azul, Veracruz por 6
-                Universitarios de Ingenieria En Gestión Empresarial con la gran
+                Universitarios de Ingeniería En Gestión Empresarial con la gran
                 satisfacción, entrega y compromiso de poner su granito de arena
-                a la actualidad en Mexico.
+                a la actualidad en México. En momentos de vulnerabilidad nos
+                damos cuenta de lo importante que es tener buenas defensas, pues
+                son las que se encargan de proteger nuestro cuerpo de patógenos
+                externos que nos causan enfermedades, si están bajas el
+                organismo se vuelve vulnerable a los ataques de virus y
+                bacterias. Ahi fué donde nació la idea de realizar un producto
+                completamente diferente e innovador que ayudaría a las personas
+                a fortalecer su sistema inmunológico.
               </p>
               <h3 className="text-3xl font-semibold text-white mt-8">
-                Que hacemos
+                ¿Qué hacemos?
               </h3>
               <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                 Tenté formula un producto totalmente diferente, con ingredientes
@@ -47,7 +54,7 @@ const AboutUs = () => {
                 defensas para su día a día.
               </p>
               <h3 className="text-3xl font-semibold text-white mt-8">
-                Quienes somos
+                ¿Quienes somos?
               </h3>
               <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
                 Tenté es una Empresa socialmente responsable. Nuestro equipo de

@@ -17,7 +17,7 @@ const Team = () => {
             </div>
           </div>
           <div className="flex flex-wrap">
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 mx-24	">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div

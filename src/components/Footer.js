@@ -33,7 +33,7 @@ export default function Footer() {
               a 2 días hábiles.
             </h5>
             <span>
-              Ubicanos <a href="">Aqui</a>
+              Ubicanos <a href="https://goo.gl/maps/TA2zFg3o81GqkwZx5">Aqui</a>
             </span>
             <div className="mt-6">
               <button
@@ -111,7 +111,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                      href="https://es.wikipedia.org/wiki/Licencia_MIT"
                     >
                       MIT License
                     </a>
