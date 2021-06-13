@@ -1,4 +1,8 @@
 import React from "react";
+import etica from "../assets/docs/etica.pdf";
+import politicas from "../assets/docs/politicas.pdf";
+import beneficiosDoc from "../assets/docs/beneficios.pdf";
+import valores from "../assets/docs/valores.pdf";
 
 export default function Footer() {
   return (
@@ -35,112 +39,85 @@ export default function Footer() {
             <span>
               Ubicanos <a href="https://goo.gl/maps/TA2zFg3o81GqkwZx5">Aqui</a>
             </span>
-            <div className="mt-6">
-              <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
+            <div className="mt-6 flex">
+              <div
+                className="flex bg-white text-blue-600 shadow-lg font-normal h-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                style={{ width: "40px" }}
               >
-                <i className="flex fab fa-twitter"></i>
-              </button>
-              <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-facebook-square"></i>
-              </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-github"></i>
-              </button>
+                <a
+                  className=""
+                  href="https://www.facebook.com/Tent%C3%A9-104557801617693"
+                >
+                  <i className="flex fab fa-facebook-square"></i>
+                </a>
+              </div>
+              <div className="flex bg-white text-blue-600 shadow-lg font-normal h-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3">
+                <a href="https://www.instagram.com/tente85/?hl=es-la">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                  Useful Links
-                </span>
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation"
-                    >
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial"
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free"
-                    >
-                      Free Products
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
-                  Other Resources
-                </span>
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://es.wikipedia.org/wiki/Licencia_MIT"
-                    >
-                      MIT License
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms"
-                    >
-                      Terms & Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
+            <div
+              className="flex flex-wrap items-top mb-6"
+              style={{ display: "flex", width: "100%" }}
+            >
+              <div
+                className="w-full lg:w-4/12 px-4"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <div>
+                  <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
+                    Otros recursos
+                  </span>
+                  <ul className="list-unstyled">
+                    <li>
+                      <a
+                        className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href={etica}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Código de ética
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href={politicas}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Políticas de la Empresa
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href={beneficiosDoc}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Beneficios
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href={valores}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Valores
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -149,11 +126,8 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()} Tenté by{" "}
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Me
-              </a>
-              .
+              Copyright © {new Date().getFullYear()} . Todos los izquierdos
+              reservados.
             </div>
           </div>
         </div>

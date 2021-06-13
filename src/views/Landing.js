@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import oranges from "../assets/img/naranjas.jpg";
@@ -9,8 +8,14 @@ import AboutUs from "components/AboutUs";
 import Product from "components/Product";
 import Benefit from "components/Benefit";
 import Recommendations from "components/Recommendations";
+import ReactGa from "react-ga";
 
 export default function Landing() {
+  useEffect(() => {
+    ReactGa.initialize("G-L22JPTGQ39");
+
+    ReactGa.pageview("/");
+  }, []);
   return (
     <>
       <Navbar transparent />

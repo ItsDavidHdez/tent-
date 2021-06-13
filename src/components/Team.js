@@ -17,7 +17,7 @@ const Team = () => {
             </div>
           </div>
           <div className="flex flex-wrap">
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 mx-24	">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-4 mb-12 mx-24">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -45,30 +45,22 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director General de la Empresa
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </button>
-                    <button
-                      className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-dribbble"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.facebook.com/profile.php?id=100004572640078">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
+                    <div className="flex justify-center items-center bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.instagram.com/maffortega17/?hl=es-la">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-4 mb-12">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -94,24 +86,22 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director de Operaciones
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-google"></i>
-                    </button>
-                    <button
-                      className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.facebook.com/rosy.garcia.904108">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
+                    <div className="flex justify-center items-center bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.instagram.com/rosygargon/?hl=es-la">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-4 mb-12">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -139,30 +129,22 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director de Marketing
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-google"></i>
-                    </button>
-                    <button
-                      className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.facebook.com/profile.php?id=100010265146633">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
+                    <div className="flex justify-center items-center bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.instagram.com/axelrods19/?hl=es-la">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-0 mb-12">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -190,36 +172,22 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director de Producciones y Ventas
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-dribbble"></i>
-                    </button>
-                    <button
-                      className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-google"></i>
-                    </button>
-                    <button
-                      className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.facebook.com/brenda.jaramillo.94">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
+                    <div className="flex justify-center items-center bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.instagram.com/brenda_jaramillo26/?hl=es-la">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-0 mb-12">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -247,36 +215,17 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director Financiero
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-dribbble"></i>
-                    </button>
-                    <button
-                      className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-google"></i>
-                    </button>
-                    <button
-                      className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.facebook.com/profile.php?id=100007736435924">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="w-full md:w-4/12 w-4/12 lg:mb-0 mb-12">
               <div className="px-6">
                 <div className="flex justify-center">
                   <div
@@ -304,31 +253,12 @@ const Team = () => {
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director de Recursos Humanos
                   </p>
-                  <div className="mt-6">
-                    <button
-                      className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-dribbble"></i>
-                    </button>
-                    <button
-                      className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-google"></i>
-                    </button>
-                    <button
-                      className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </button>
+                  <div className="mt-6 flex justify-center">
+                    <div className="flex justify-center items-center bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1">
+                      <a href="https://www.instagram.com/jaquelinegarvaz/?hl=es-la">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
