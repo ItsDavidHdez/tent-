@@ -1,21 +1,44 @@
-import React from "react";
-import { RViewer, RViewerTrigger } from "react-viewerjs";
+import React, { useState } from "react";
+import { SliderData } from "./SliderData";
+import "./Collage.css";
 
-const Collage = () => {
-  let images = [
-    "../assets/img/orange.jpg",
-    "../assets/img/lemon.jpg",
-    "../assets/img/honey.jpg",
-    "../assets/img/turmeric.jpg",
-    "../assets/img/ginger.jpg",
-  ];
+const Collage = ({ slides, setShowCollage }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
   return (
-    <RViewer imageUrls={images}>
-      <RViewerTrigger>
-        <button>¡Checa esto!</button>
-      </RViewerTrigger>
-    </RViewer>
+    <section className="slider">
+      <button className="left-arrow" onClick={prevSlide}>
+        left
+      </button>
+      <button onClick={() => setShowCollage(false)}>X</button>
+      <button className="right-arrow" onClick={nextSlide}>
+        right
+      </button>
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt="travelimage" className="image" />
+            )}
+          </div>
+        );
+      })}
+    </section>
   );
 };
 

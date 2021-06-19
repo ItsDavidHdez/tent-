@@ -1,119 +1,128 @@
-import React from "react";
-import content from "../assets/img/info-product.jpg";
+import React, { useState } from "react";
+import lemon from "../assets/img/lemon.jpg";
+import ginger from "../assets/img/ginger.jpg";
+import honey from "../assets/img/honey.jpg";
+import orange from "../assets/img/orange.jpg";
+import turmeric from "../assets/img/turmeric.jpg";
+import ModalLayout from "components/ModalLayout";
 
 const Benefit = () => {
-  return (
-    <section id="about" className="relative py-20">
-      <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style={{ height: "80px" }}
-      >
-        <svg
-          className="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            className="text-white fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
+  const benefit = [
+    {
+      title: "Beneficios de la naranja",
+      description: `
+        • Ayuda a prevenir la diabetes
+        •	Refuerza el sistema inmunológico
+        •	Reduce el colesterol 
+        •	Mejora el funcionamiento cardiovascular`,
+      img: `${orange}`,
+    },
+    {
+      title: "Beneficios del Limón Canario",
+      description: `
+      •	Es un excelente antioxidante
+      •	Evita resfriados 
+      •	Favorece la correcta digestión
+      •	Promueve la pérdida de peso
+    `,
+      img: `${lemon}`,
+    },
+    {
+      title: "Beneficios de la Miel",
+      description: `
+      •	Es un excelente antioxidante
+      •	Evita resfriados 
+      •	Favorece la correcta digestión
+      •	Promueve la pérdida de peso
+    `,
+      img: `${honey}`,
+    },
+    {
+      title: "Beneficios del Jengibre",
+      description: `
+      •	Es un excelente antioxidante
+      •	Evita resfriados 
+      •	Favorece la correcta digestión
+      •	Promueve la pérdida de peso
+    `,
+      img: `${ginger}`,
+    },
+    {
+      title: "Beneficios de la Cúrcuma",
+      description: `
+      •	Disminuye el colesterol \n
+      •	Promueve la pérdida de peso \n
+      •	Favorece el buen funcionamiento del hígado \n
+      •	Mejora la circulación \n
+    `,
+      img: `${turmeric}`,
+    },
+  ];
 
-      <div className="container mx-auto px-4">
-        <div className="items-center flex flex-wrap">
-          <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-            <img
-              alt="Beneficios de la Bomba Citrica"
-              className="max-w-full rounded-lg shadow-lg"
-              src={content}
-            />
-          </div>
-          <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
-            <div className="md:pr-12">
-              <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                <i className="fas fa-heartbeat"></i>
-              </div>
-              <h3 className="text-3xl font-semibold">
-                Beneficios de Bomba Citrica
-              </h3>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                Contiene ingredientes altos en vitaminas, los cuales tienen
-                grandes beneficios para nuestro sistema inmunológico, lo que nos
-                ayudará a aumentar nuestras defensas para no estar vulnerables a
-                contraer infecciones y/ enfermedades de todo tipo, como son:
-              </p>
-              <ul className="list-none mt-6">
-                <li className="py-2">
-                  <div className="flex items-center">
-                    <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i className="fas fa-apple-alt"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-gray-600">Naranja</h4>
-                    </div>
-                  </div>
-                </li>
-                <li className="py-2">
-                  <div className="flex items-center">
-                    <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i className="fas fa-lemon"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-gray-600">Limón Canario</h4>
-                    </div>
-                  </div>
-                </li>
-                <li className="py-2">
-                  <div className="flex items-center">
-                    <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i className="fab fa-forumbee"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-gray-600">Miel</h4>
-                    </div>
-                  </div>
-                </li>
-                <li className="py-2">
-                  <div className="flex items-center">
-                    <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i className="fas fa-seedling"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-gray-600">Cúrcuma</h4>
-                    </div>
-                  </div>
-                </li>
-                <li className="py-2">
-                  <div className="flex items-center">
-                    <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
-                        <i className="fas fa-pepper-hot"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="text-gray-600">Jenjible</h4>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  // let x = Object.entries(benefit);
+  // x.forEach((element) => console.log(element[1]));
+
+  const [showModal, setShowModal] = useState(false);
+  const [showOrange, setShowOrange] = useState(false);
+  const [showLemon, setShowLemon] = useState(false);
+  const [showHoney, setShowHoney] = useState(false);
+  const [showGinger, setShowGinger] = useState(false);
+  const [showTurmeric, setShowTurmeric] = useState(false);
+
+  return (
+    <>
+      <section className="mb-24" style={{ marginTop: "35px" }}>
+        <div className="w-full md:w-5/12 ml-auto mr-auto px-4 mb-24">
+          <div className="text-center">
+            <h3 className="text-3xl font-semibold">
+              Beneficios de Bomba Citrica
+            </h3>
           </div>
         </div>
-      </div>
-    </section>
+        <div className="flex justify-between">
+          {benefit.map((item, key) => (
+            <div key={key}>
+              <button
+                onClick={(title, description) => {
+                  setShowModal(true);
+                  return (
+                    <ModalLayout
+                      title={title}
+                      description={description}
+                      setShowModal={setShowModal}
+                    />
+                  );
+                }}
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  style={{ width: "337px" }}
+                />
+              </button>
+              {!showModal || (
+                <ModalLayout
+                  title={item.title}
+                  description={item.description}
+                  setShowModal={setShowModal}
+                />
+              )}
+              {/* <button key={key} onClick={() => setShowModal(true)}>
+                <img
+                  src={item.imgs[1]}
+                  alt={item.title[1]}
+                  style={{ width: "230px" }}
+                />
+              </button> */}
+            </div>
+          ))}
+          {/* 
+          <img src={honey} alt="Miel" style={{ width: "205px" }} />
+          <img src={orange} alt="Naranja" style={{ width: "270px" }} />
+          <img src={turmeric} alt="Cúrcuma" style={{ width: "287px" }} /> */}
+        </div>
+      </section>
+    </>
   );
 };
 
