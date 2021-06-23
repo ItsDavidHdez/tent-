@@ -1,10 +1,6 @@
-import React, { useState, Suspense, lazy } from "react";
+import React, { useState } from "react";
 import { SliderData } from "./SliderData";
 import "./Collage.css";
-
-const Image = lazy(() => {
-  SliderData.map((pic) => pic.image);
-});
 
 const Collage = ({ slides, setShowCollage }) => {
   const [current, setCurrent] = useState(0);
@@ -42,15 +38,13 @@ const Collage = ({ slides, setShowCollage }) => {
             className={index === current ? "slide active" : "relative"}
             key={index}
           >
-            <Suspense fallback={<h1>Loading...</h1>}>
-              {index === current && (
-                <img
-                  src={slide.image}
-                  alt="travelimage"
-                  style={{ width: "450px" }}
-                />
-              )}
-            </Suspense>
+            {index === current && (
+              <img
+                src={slide.image}
+                alt="travelimage"
+                style={{ width: "450px" }}
+              />
+            )}
           </div>
         );
       })}

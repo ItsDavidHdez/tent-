@@ -10,7 +10,7 @@ const Product = () => {
       <section id="product" className="pb-20 bg-gray-300 -mt-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center mt-24">
-            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-6">
               <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                 <i className="fas fa-user-friends text-xl"></i>
               </div>
@@ -26,7 +26,7 @@ const Product = () => {
               </p>
               <button onClick={() => setShowCollage(true)}>Click me</button>
             </div>
-            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-6">
+            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-16">
               <div className="mb-6">
                 <img
                   alt="Producto"

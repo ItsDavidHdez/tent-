@@ -4,65 +4,40 @@ import ginger from "../assets/img/ginger.jpg";
 import honey from "../assets/img/honey.jpg";
 import orange from "../assets/img/orange.jpg";
 import turmeric from "../assets/img/turmeric.jpg";
-import ModalLayout from "components/ModalLayout";
+import ModalOrange from "components/ModalOrange";
+import ModalLemon from "./ModalLemon";
+import ModalHoney from "./ModalHoney";
+import ModalGinger from "./ModalGinger";
+import ModalTurmeric from "./ModalTurmeric";
 
 const Benefit = () => {
   const benefit = [
     {
+      id: 1,
       title: "Beneficios de la naranja",
-      description: `
-        • Ayuda a prevenir la diabetes
-        •	Refuerza el sistema inmunológico
-        •	Reduce el colesterol 
-        •	Mejora el funcionamiento cardiovascular`,
       img: `${orange}`,
     },
     {
+      id: 2,
       title: "Beneficios del Limón Canario",
-      description: `
-      •	Es un excelente antioxidante
-      •	Evita resfriados 
-      •	Favorece la correcta digestión
-      •	Promueve la pérdida de peso
-    `,
       img: `${lemon}`,
     },
     {
+      id: 3,
       title: "Beneficios de la Miel",
-      description: `
-      •	Es un excelente antioxidante
-      •	Evita resfriados 
-      •	Favorece la correcta digestión
-      •	Promueve la pérdida de peso
-    `,
       img: `${honey}`,
     },
     {
+      id: 4,
       title: "Beneficios del Jengibre",
-      description: `
-      •	Es un excelente antioxidante
-      •	Evita resfriados 
-      •	Favorece la correcta digestión
-      •	Promueve la pérdida de peso
-    `,
       img: `${ginger}`,
     },
     {
-      title: "Beneficios de la Cúrcuma",
-      description: `
-      •	Disminuye el colesterol \n
-      •	Promueve la pérdida de peso \n
-      •	Favorece el buen funcionamiento del hígado \n
-      •	Mejora la circulación \n
-    `,
+      id: 5,
       img: `${turmeric}`,
     },
   ];
 
-  // let x = Object.entries(benefit);
-  // x.forEach((element) => console.log(element[1]));
-
-  const [showModal, setShowModal] = useState(false);
   const [showOrange, setShowOrange] = useState(false);
   const [showLemon, setShowLemon] = useState(false);
   const [showHoney, setShowHoney] = useState(false);
@@ -83,15 +58,23 @@ const Benefit = () => {
           {benefit.map((item, key) => (
             <div key={key}>
               <button
-                onClick={(title, description) => {
-                  setShowModal(true);
-                  return (
-                    <ModalLayout
-                      title={title}
-                      description={description}
-                      setShowModal={setShowModal}
-                    />
-                  );
+                onClick={() => {
+                  if (key === 0) {
+                    setShowOrange(true);
+                    console.log(showOrange);
+                  } else if (key === 1) {
+                    setShowLemon(true);
+                    console.log(showLemon);
+                  } else if (key === 2) {
+                    setShowHoney(true);
+                    console.log(showHoney);
+                  } else if (key === 3) {
+                    setShowGinger(true);
+                    console.log(showGinger);
+                  } else {
+                    setShowTurmeric(true);
+                    console.log(showTurmeric);
+                  }
                 }}
               >
                 <img
@@ -100,26 +83,15 @@ const Benefit = () => {
                   style={{ width: "337px" }}
                 />
               </button>
-              {!showModal || (
-                <ModalLayout
-                  title={item.title}
-                  description={item.description}
-                  setShowModal={setShowModal}
-                />
+              {!showOrange || <ModalOrange setShowModal={setShowOrange} />}
+              {!showLemon || <ModalLemon setShowModal={setShowLemon} />}
+              {!showHoney || <ModalHoney setShowModal={setShowHoney} />}
+              {!showGinger || <ModalGinger setShowModal={setShowGinger} />}
+              {!showTurmeric || (
+                <ModalTurmeric setShowModal={setShowTurmeric} />
               )}
-              {/* <button key={key} onClick={() => setShowModal(true)}>
-                <img
-                  src={item.imgs[1]}
-                  alt={item.title[1]}
-                  style={{ width: "230px" }}
-                />
-              </button> */}
             </div>
           ))}
-          {/* 
-          <img src={honey} alt="Miel" style={{ width: "205px" }} />
-          <img src={orange} alt="Naranja" style={{ width: "270px" }} />
-          <img src={turmeric} alt="Cúrcuma" style={{ width: "287px" }} /> */}
         </div>
       </section>
     </>

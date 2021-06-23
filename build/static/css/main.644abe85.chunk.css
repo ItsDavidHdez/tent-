@@ -1,0 +1,18 @@
+/*!
+
+=========================================================
+* Boost Tailwind - v1.0.0
+=========================================================
+
+* Product Page: https://demos.creative-tim.com/tailwindcss-starter-project/#/presentation
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+.slider{position:relative;height:100%;width:100%;overflow:auto;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#000;background-color:rgba(0,0,0,.4)}.right-arrow{right:32px}.left-arrow,.right-arrow{position:absolute;top:50%;font-size:3rem;color:#000;z-index:10;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none}.left-arrow{left:32px}.slide{opacity:0;transition-duration:1s ease}.slide.active{opacity:1;transition-duration:1s;-webkit-transform:scale(1.08);transform:scale(1.08)}
+/*# sourceMappingURL=main.644abe85.chunk.css.map */
