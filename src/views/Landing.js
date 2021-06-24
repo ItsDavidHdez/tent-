@@ -12,8 +12,7 @@ import ReactGa from "react-ga";
 
 export default function Landing() {
   useEffect(() => {
-    ReactGa.initialize("G-L22JPTGQ39");
-
+    ReactGa.initialize("G-04PKPHES4B");
     ReactGa.pageview("/");
   }, []);
   return (
