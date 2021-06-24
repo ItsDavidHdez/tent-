@@ -39,77 +39,142 @@ export default function Navbar(props) {
         </div>
         <div
           className={
-            "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-            (navbarOpen ? " block rounded shadow-lg" : " hidden")
+            "lg:flex flex-grow items-center lg:bg-transparent lg:shadow-none lg:bg-gray-400 " +
+            (navbarOpen ? "block rounded shadow-lg mt-40 bg-white " : " hidden")
           }
           id="example-navbar-warning"
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="#home"
+              <button
+                className={navbarOpen ? "w-full" : ""}
+                onClick={() => setNavbarOpen(false)}
               >
-                <span className="text-white text-sm">Inicio</span>
-              </a>
-            </li>
-
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="#empresa"
-              >
-                <span className="text-white text-sm">Quienes somos</span>
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="#product"
-              >
-                <span className="text-white text-sm">Nuestro producto</span>
-              </a>
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold " +
+                    (navbarOpen ? "w-full" : "")
+                  }
+                  href="#home"
+                  onClick={() => setNavbarOpen(navbarOpen)}
+                >
+                  <span
+                    className={
+                      "text-white text-sm " +
+                      (navbarOpen ? "text-gray-700	" : "text-white")
+                    }
+                  >
+                    Inicio
+                  </span>
+                </a>
+              </button>
             </li>
             <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="#about"
+              <button
+                className={navbarOpen ? "w-full" : ""}
+                onClick={() => setNavbarOpen(false)}
               >
-                <span className="text-white text-sm">Beneficios</span>
-              </a>
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold " +
+                    (navbarOpen ? "w-full" : "")
+                  }
+                  href="#empresa"
+                >
+                  <span
+                    className={
+                      "text-white text-sm " +
+                      (navbarOpen ? "text-gray-700" : "text-white")
+                    }
+                  >
+                    Quienes somos
+                  </span>
+                </a>
+              </button>
             </li>
             <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="#form"
+              <button
+                className={navbarOpen ? "w-full" : ""}
+                onClick={() => setNavbarOpen(false)}
               >
-                <span className="text-white text-sm">Contacto</span>
-              </a>
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold " +
+                    (navbarOpen ? "w-full" : "")
+                  }
+                  href="#product"
+                >
+                  <span
+                    className={
+                      "text-white text-sm " +
+                      (navbarOpen ? "text-gray-700" : "text-white")
+                    }
+                  >
+                    Nuestro producto
+                  </span>
+                </a>
+              </button>
+            </li>
+            <li className="flex items-center">
+              <button
+                className={navbarOpen ? "w-full" : ""}
+                onClick={() => setNavbarOpen(false)}
+              >
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold " +
+                    (navbarOpen ? "w-full" : "")
+                  }
+                  href="#benefit"
+                >
+                  <span
+                    className={
+                      "text-white text-sm " +
+                      (navbarOpen ? "text-gray-700" : "text-white")
+                    }
+                  >
+                    Beneficios
+                  </span>
+                </a>
+              </button>
+            </li>
+            <li className="flex items-center">
+              <button
+                className={navbarOpen ? "w-full" : ""}
+                onClick={() => setNavbarOpen(false)}
+              >
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold " +
+                    (navbarOpen ? "w-full" : "")
+                  }
+                  href="#form"
+                >
+                  <span
+                    className={
+                      "text-white text-sm " +
+                      (navbarOpen ? "text-gray-700" : "text-white")
+                    }
+                  >
+                    Contacto
+                  </span>
+                </a>
+              </button>
             </li>
           </ul>
         </div>

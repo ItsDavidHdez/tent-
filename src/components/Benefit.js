@@ -46,7 +46,7 @@ const Benefit = () => {
 
   return (
     <>
-      <section className="mb-24" style={{ marginTop: "35px" }}>
+      <section id="benefit" className="mb-24" style={{ marginTop: "35px" }}>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4 mb-24">
           <div className="text-center">
             <h3 className="text-3xl font-semibold">
